@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>MY portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          FAWAS LAL
+        </div>
+      </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper quip">
+                <img src="images/logos/quip.png" alt="">
+              </div>
+
+              <div class="subtitle">Can build Html5 websites According to Demands.</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/devcamp.png" alt="">
+              </div>
+
+              <div class="subtitle">Can Add Advanced css to the Web pages.</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/eventbrite.png" alt="">
+              </div>
+
+              <div class="subtitle">Can work with Modern javascript to build more functionality to the websites</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/shop-hacker.png" alt="">
+              </div>
+
+              <div class="subtitle">Can build Advanced Web and other Apps with Python.</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/crondose.png" alt="">
+              </div>
+
+              <div class="subtitle">Advanced Php</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/dailysmarty.png" alt="">
+              </div>
+
+              <div class="subtitle">Has Work Experience as a Database Admintrator.</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio7.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/dashtrack.png" alt="">
+              </div>
+
+              <div class="subtitle">Done Full stack web devlopement internship with Java and build applications with java .</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio8.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/devtrunk.png" alt="">
+              </div>
+
+              <div class="subtitle">c++ Programming.</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio9.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/edutechional.png" alt="">
+              </div>
+
+              <div class="subtitle">Created a Angular js webgl application .</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio10.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/ministry-safe.png" alt="">
+              </div>
+
+              <div class="subtitle">build a world time showing application using flutter used flutter to develop mobile apps.</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio11.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/open-devos.png" alt="">
+              </div>
+
+              <div class="subtitle">Working with Adobe photoshop for over five years.</div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio12.jpg)"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="images/logos/toastability.png" alt="">
+              </div>
+
+              <div class="subtitle">Creating beutifull ui/ux.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </div>
+
+</body>
+<script type="text/javascript">
+  const items=document.querySelectorAll('.portfolio-item-wrapper');
+
+  items.forEach(item => {
+    item.addEventListener('mouseover',() =>{
+      item.childNodes[1].classList.add('img-darken');
+    })
+
+    item.addEventListener('mouseout',() =>{
+      item.childNodes[1].classList.remove('img-darken');
+    })
+  });
+
+
+</script>
+
+</html>
